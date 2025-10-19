@@ -1,0 +1,19 @@
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+.option-selected {
+    /* Apply a slight lift and stronger shadow for the selected button */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.progress-bar {
+    /* Keep the transition for a smooth progress bar update */
+    transition: width 0.5s ease-in-out;
+}
